@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Duc Pham's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="script.js" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- AOS Plugin -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+	<!-- Skill Bar -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+</head>
+<body>
+	<script>
+		AOS.init({
+			duration: 1300,
+		});
+	</script>
+
+	<div class="navi">
+		<nav class="navbar navbar-expand-lg navbar-dark background fixed-top">
+			<a class="navbar-brand" href="#">Duc Pham</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="banner">
+		<div class="container">
+			<div class="text-banner">
+				<div class="title" data-aos="zoom-out">Web Developer
+				</div>
+				<a href="#" class="btnD1">Contact me</a>
+			</div>
+			<img class="mouse" src="img/mouse1.png">
+		</div>
+	</div>
+
+	<div class="about-div container">
+		<div class="row">
+			<div class="col-sm-4 left-about ml-lg-auto">
+				<div class="title-about" data-aos="fade-up">Duc Pham</div>
+				<div class="small-title" data-aos="fade-up">Web Developer</div>
+				<br>
+				<p data-aos="fade-up">I’m a 20-year-old junior software engineer from a peaceful street in Hanoi, Vietnam. I’m currently studying abroad in Finland at Lahti University of Applied Sciences. I love sports and music. I'm currently looking for an internship as a front-end developer.</p>
+			</div>
+			<img class="potrait col-sm-4" src="img/pot.jpg">
+			<div class="col-sm-4 right-about">
+				<div class="title-about" data-aos="fade-up">My skills</div>
+				<div id="element" class="skill-bar">
+					<ul>
+						<li class="html-bar">HTML</li>
+						<li class="css-bar">CSS</li>
+						<li class="js-bar">JavaScript</li>
+						<li class="php-bar">PHP</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="works-div">
+		<div class="title-about" data-aos="fade-down">My works and activities</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 hover-1">
+					<a href="http://mi-linux.wlv.ac.uk/~1818150/travelogie-final/index.php" target="_blank">
+						<div class="first-work"></div>
+						<div class="overlay overlay-text">Travelogie<br>Website about travel</div>
+					</a>
+				</div>
+
+				<div class="col-md-6 hover-2">
+					<a href="http://89.166.34.193/" target="_blank">
+						<div class="second-work"></div>
+						<div class="overlay overlay-text">Parinpelto</div>
+					</a>
+				</div>
+
+				<div class="col-md-6 hover-3">
+					<a href="https://github.com/anhduc109/GreenICT2" target="_blank">
+						<div class="third-work"></div>
+						<div class="overlay overlay-text">GreenICT2</div>
+					</a>
+				</div>
+
+				<div class="col-md-6 hover-4">
+						<!-- <a href="https://github.com/anhduc109/GreenICT2" target="_blank"> -->
+							<div class="fourth-work"></div>
+							<div class="overlay overlay-text">Jukola Event App</div>
+						</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
