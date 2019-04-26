@@ -20,8 +20,10 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<!-- Skill Bar -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,90 +35,152 @@
 	<script>
 		AOS.init({
 			duration: 1300,
+			once: true,
 		});
+		
 	</script>
 
 	<div class="navi">
 		<nav class="navbar navbar-expand-lg navbar-dark background fixed-top">
-			<a class="navbar-brand" href="#">Duc Pham</a>
+			<a class="navbar-brand" href="#first">Duc Pham</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-lg-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#first">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#about" id="scroll-about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#education">Education</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="#works">Works</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<div class="banner">
+	<div class="banner" id="first">
 		<div class="container">
 			<div class="text-banner">
-				<div class="title" data-aos="zoom-out">Web Developer
+				<div class="title" data-aos="zoom-out">Front-end Developer
 				</div>
-				<a href="#" class="btnD1">Contact me</a>
+				<a class="btnD1" href="#contact">Contact me</a>
 			</div>
 			<img class="mouse" src="img/mouse1.png">
 		</div>
 	</div>
 
-	<div class="about-div container">
+	<div class="about-div container" id="about">
 		<div class="row">
 			<div class="col-sm-4 left-about ml-lg-auto">
 				<div class="title-about" data-aos="fade-up">Duc Pham</div>
-				<div class="small-title" data-aos="fade-up">Web Developer</div>
+				<div class="small-title" data-aos="fade-up">Front-end Developer</div>
 				<br>
-				<p data-aos="fade-up">I’m a 20-year-old junior software engineer from a peaceful street in Hanoi, Vietnam. I’m currently studying abroad in Finland at Lahti University of Applied Sciences. I love sports and music. I'm currently looking for an internship as a front-end developer.</p>
+				<p data-aos="fade-up">I’m a 20-year-old junior software engineer from a peaceful street in Hanoi, Vietnam. 
+				I’m currently studying abroad in Finland at Lahti University of Applied Sciences. 
+				I love sports and music. I'm currently looking for an internship as a front-end developer.</p>
 			</div>
 			<img class="potrait col-sm-4" src="img/pot.jpg">
 			<div class="col-sm-4 right-about">
-				<div class="title-about" data-aos="fade-up">My skills</div>
+				<div class="title-about skill-content" data-aos="fade-up">My skills</div>
 				<div id="element" class="skill-bar">
 					<ul>
 						<li class="html-bar">HTML</li>
 						<li class="css-bar">CSS</li>
 						<li class="js-bar">JavaScript</li>
 						<li class="php-bar">PHP</li>
+						<li class="wp-bar">WordPress</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="works-div">
-		<div class="title-about" data-aos="fade-down">My works and activities</div>
+	<div class="education-div" id="education">
+		<div class="title-about" data-aos="fade-down">
+			<hr class="works-hr">
+			Education
+			<hr class="works-hr">
+		</div>
+
+		<div class="container">
+			<div class="row edu-content">
+				<div class="col-md-6">
+					<img class="img-responsive lamk-logo" src="img/lamk-logo.png">
+					<div class="edu-date-title">
+						2016 - present
+						<br><br>
+						Currently studying Business Information Technology, Faculty of
+						Business at Lahti University of Applied Sciences, Finland 
+						study with the focus on web development. In here, I
+						learnt HTML, CSS, JavaScript, C# and other
+						coding languages.
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img class="img-responsive wolves-logo" src="img/wolves-logo.png">
+					<div class="edu-date-title wolves-title">
+						Sep 2018 – Jan 2019
+						<br><br>
+						Participated in an exchange period to the University of
+						Wolverhampton, United Kingdam as an Computer Science Bachelor’s Degree
+						student. In here, I learnt Java, PHP, MySQL, Unity and GitHub.
+					</div>
+				</div>
+			</div>
+
+			<div class="ultrahack">
+					<img class="img-responsive ultra-logo" src="img/ultrahack-logo.png">
+					<div class="edu-date-title ultra-title">
+						Helsinki, Finland | August 2018
+						<br><br>
+						My volunteer period in media and catering team at Ultrahack – a ultra-development
+						runway hackathon with a mission to build a community
+						with best talented people in technology field.
+					</div>
+				</div>
+		</div>
+
+	</div>
+
+	<div class="works-div" id="works">
+		<div class="title-about" data-aos="fade-down">
+			<hr class="works-hr">
+			My works
+			<hr class="works-hr">
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 hover-1">
+				<div class="col-md-6 hover-1" data-aos="fade-down" data-aos-delay="200">
 					<a href="http://mi-linux.wlv.ac.uk/~1818150/travelogie-final/index.php" target="_blank">
 						<div class="first-work"></div>
-						<div class="overlay overlay-text">Travelogie<br>Website about travel</div>
+						<div class="overlay overlay-text">Travelogie</div>
 					</a>
 				</div>
 
-				<div class="col-md-6 hover-2">
+				<div class="col-md-6 hover-2" data-aos="fade-down" data-aos-delay="400">
 					<a href="http://89.166.34.193/" target="_blank">
 						<div class="second-work"></div>
 						<div class="overlay overlay-text">Parinpelto</div>
 					</a>
 				</div>
 
-				<div class="col-md-6 hover-3">
+				<div class="col-md-6 hover-3" data-aos="fade-down" data-aos-delay="600">
 					<a href="https://github.com/anhduc109/GreenICT2" target="_blank">
 						<div class="third-work"></div>
 						<div class="overlay overlay-text">GreenICT2</div>
 					</a>
 				</div>
 
-				<div class="col-md-6 hover-4">
+				<div class="col-md-6 hover-4" data-aos="fade-down" data-aos-delay="800">
 						<!-- <a href="https://github.com/anhduc109/GreenICT2" target="_blank"> -->
 							<div class="fourth-work"></div>
 							<div class="overlay overlay-text">Jukola Event App</div>
@@ -124,6 +188,43 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="contact-div" id="contact">
+		<div class="title-about" data-aos="fade-down">
+			<hr class="contact-hr">
+			Contact
+			<hr class="contact-hr">
+		</div>
+
+		<div class="container">
+			<div class="contact-form">
+				<form action="index.html">
+					<input type="text" class="name" name="firstname" required placeholder="Your name..">
+					  
+					<input type="email" class="email" name="email" required placeholder="Your email..">
+
+					<textarea class="subject" name="subject" required placeholder="Write something.." style="height:200px"></textarea>
+					<input type="submit" class="submit-btn" value="Submit">
+					  
+				</form>
+			</div>
+
+			<div class="social-div">
+				<div class="title-about" data-aos="fade-down">
+					<hr class="contact-hr">
+						Follow me on
+					<hr class="contact-hr">
+				</div>
+				<div class="row media-icon">
+					<a href="https://github.com/anhduc109" class="col-md-3 col-sm-3" target="_blank"><i class="fab fa-github-alt fa-4x"></i></a>
+					<a href="https://www.linkedin.com/in/ducphamlamk/" class="col-md-3 col-sm-3" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a>
+					<a href="https://www.facebook.com/onetoflu" class="col-md-3 col-sm-3" target="_blank"><i class="fab fa-facebook fa-4x"></i></a>
+					<a href="https://www.instagram.com/anhduc109/" class="col-md-3 col-sm-3" target="_blank"><i class="fab fa-instagram fa-4x"></i></a>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </body>
 </html>

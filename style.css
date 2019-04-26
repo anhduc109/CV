@@ -4,11 +4,12 @@ h1 {
 
 p {
 	font-family: Open Sans;
+	font-weight: 600;
 }
 
 .small-title {
 	font-family: Open Sans;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
 }
 
@@ -112,6 +113,10 @@ p {
 	text-align: left;
 }
 
+.skill-content {
+	margin-bottom: -20px;
+}
+
 /* ANIMATED-BAR */
 .skill-bar {
 	width: 100%;
@@ -180,7 +185,7 @@ li.js-bar:after {
 
 @keyframes js {
 	to {
-		width: 60%;
+		width: 70%;
 	}
 }
 
@@ -190,17 +195,72 @@ li.php-bar:after {
 
 @keyframes php {
 	to {
-		width: 50%;
+		width: 60%;
 	}
 }
 
+li.wp-bar:after {
+	animation-name: wp;
+}
 
-/* WORKS-DIV */
-.works-div {
-	padding-top: 50px;
+@keyframes wp {
+	to {
+		width: 30%;
+	}
+}
+
+/* EDUCATION-DIV */
+.education-div {
+	padding-top: 40px;
 	padding-bottom: 80px;
 	text-align: center;
 	background-color: #F0EEF0;
+}
+
+.edu-content {
+	padding-top: 20px;
+}
+
+.lamk-logo {
+	height: 100px;
+}
+
+.wolves-logo {
+	margin-top: 20px;
+	height: 60px;
+}
+
+.edu-date-title {
+	font-family: Open Sans;
+    font-weight: 600;
+	font-size: 20px;
+	margin: 30px 50px 30px 50px;
+}
+
+.wolves-title {
+	margin-top: 50px;
+}
+
+.ultra-logo {
+	height: 35px;
+	margin-top: 30px;
+}
+
+.ultra-title {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+/* WORKS-DIV */
+.works-div {
+	padding-top: 40px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.works-hr {
+	border: 1px solid #617676;
+	width: 100px;
 }
 
 .first-work {
@@ -288,9 +348,104 @@ li.php-bar:after {
   	outline-offset: -18px;
 }
 
+/* CONTACT */
+.contact-div {
+	text-align: center;
+	padding-top: 40px;
+	background-color: #F0EEF0;
+}
+
+.contact-hr {
+	border: 1px solid #617676;
+	width: 80px;
+}
+
+.contact-form {
+	padding: 20px;
+}
+
+input[type=text], [type=email], select, textarea {
+	width: 60%; /* Full width */
+	padding: 12px; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.submit-btn {
+  background-color: #617676;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+.submit-btn:hover {
+	background: black;
+	text-decoration: none;
+}
+  
+.social-div {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.media-icon {
+	padding: 30px 100px 30px 100px;
+}
+
+.fab {
+	color: #495057;
+}
+
+.fab:hover {
+    color: #617676;
+}
+
+
 /* MOBILE-VER */
 @media(max-width: 500px) {
 	.banner {
 		background-attachment: unset;
+	}
+
+	.text-banner {
+		top: 30%;
+	}
+
+	.about-div {
+		padding-top: 50px;
+	}
+
+	.left-about {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.potrait {
+		margin-bottom: 40px;
+	}
+
+	.edu-date-title {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+}
+
+@media(max-width: 1000px) {
+	input[type=text], [type=email], select, textarea {
+		width: 100%;
+	}
+
+	.submit-btn {
+		margin-left: 0;
 	}
 }
