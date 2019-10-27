@@ -166,9 +166,8 @@
 					</a>
 				</div>
 
-				<div class="col-md-6 hover-2" data-aos="fade-down" data-aos-delay="400">
-					<a href="http://89.166.34.193/" target="_blank">
-						<div class="second-work"></div>
+				<div class="col-md-6 hover-2" data-aos="fade-down" data-aos-delay="400">						
+				<div class="second-work"></div>
 						<div class="overlay overlay-text">Parinpelto</div>
 					</a>
 				</div>
@@ -228,3 +227,4 @@
 	</div>
 </body>
 </html>
+
